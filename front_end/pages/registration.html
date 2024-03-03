@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Movie Registration</title>
+    <link rel="stylesheet" href="../css/registration.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="navbar">
+        <div class="navbar-left">
+          <img class="bklogo" src="../images/others/pngwing.com.png" alt="" />
+        </div>
+        <div class="navbar-right">
+          <button class="sign-in"><a href="../index.html">Home</a></button>
+          <img
+            class="burger-bar"
+            src="../images/others/burger-bar.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <header>Movie Registration</header>
+      <form action="" class="form" id="frm">
+        <div class="input-box">
+          <label>Movie Title</label>
+          <input id="movie-title-value" type="text" placeholder="Enter full Movie Title"  />
+        </div>
+
+        <div class="input-box">
+          <label>Genre</label>
+          <input id="genre-value" type="text" placeholder="Genre"  />
+        </div>
+
+        <div class="input-box">
+          <label>Language</label>
+          <input id="language-value" type="text" placeholder="Available language"  />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Rating</label>
+            <input id="rating-value" type="number" placeholder="Rating out of 10"  />
+          </div>
+          <div class="input-box">
+            <label>Release date</label>
+            <input id="release-date-value"
+              type="date"
+              placeholder="Enter the date of Release"
+              
+            />
+          </div>
+        </div>
+        <div class="input-box description">
+          <div class="formfield">
+            <label for="textarea"></label>
+            <textarea
+              id="textarea-value"
+              rows="5"
+              placeholder="Enter short description about the movie..."
+              
+            ></textarea>
+          </div>
+        </div>
+
+        <div>
+          <label for="upload">Upload Movie poster</label>
+          <input title="poster" id="upload-poster-value" type="file"/>
+        </div>
+
+        <div>
+          <label for="upload-banner">Upload Movie Banner</label>
+          <input title="poster" id="upload-banner-value" type="file"/>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </section>
+
+    <script src="../js/registration.js"></script>
+  </body>
+</html>

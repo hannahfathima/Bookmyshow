@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fliud">
+
+        <!-- /////////main navbar/////////// -->
+    <div class="main-navbar">
+        <!-- <div class="container"> -->
+        <div class="main-nav-left">
+            <img src="./images/others/pngwing.com.png" alt="">
+            <input type="search" id="search-bar" placeholder="Search for Movies,Events,Plays,Sports and Activities" onkeyup="searchFunction()">
+        </div>
+        <div class="main-nav-right">
+            <!-- <select>
+                <option value="kochi">Kochi</option>
+                <option value="kochi">tvm</option>
+                <option value="kochi">clct</option>
+            </select> -->
+            
+            <!-- <a class="sgn" href="./index.html">Sign in</a>
+            <a href="./pages/register-movie.html">Register Movie</a>
+            <button class="sgn" id="logout">Logout</button> -->
+            <div id="name" style="display: flex;"></div> 
+            <!-- <i class="fa fa-bars" aria-hidden="true" id="toggle-panel"></i> -->
+        </div>
+        <!-- </div> -->
+    </div>
+    <!-- ///////////////sec navbar////////////// -->
+    <div class="sec-navbar">
+        <div class="sec-nav-left">
+            <div><a href="">Movies</a></div>
+            <div><a href="">Stream</a></div>
+            <div><a href="">Events</a></div>
+            <div><a href="">Plays</a></div>
+            <div><a href="">Sports</a></div>
+            <div><a href="">Activities</a></div>
+            <div><a href="">Buzz</a></div>
+        </div>
+        <div class="sec-nav-right">
+            <div><a href="">ListYourShow </a></div>
+            <div><a href="">Corporates</a></div>
+            <div><a href="">Offers</a></div>
+            <div><a href="">Gift Cards</a></div>
+        </div>
+    </div>
+        <!-- <div class="navbar">
+            <div class="navbar-left">
+                <img class="bklogo" src="./images/others/pngwing.com.png" alt="">
+                <div class="sample"></div>
+                <input class="navbar-search" type="text" placeholder="Search for Movies,Events,Plays and Activities">
+
+
+                <div class="navbar-right">
+                    <span id="name"></span>
+                  
+                    <span class="kochi">Kochi</span>
+                    <img class="burger-bar" src="./images/others/burger-bar.png" alt="">
+                </div>
+            </div>
+           
+        </div> -->
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner carosal">
+              <div class="carousel-item active">
+                <img src="../front_end/images/1695984008899_icccricketwcoctdesktop.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../front_end/images/1698603955302_web.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../front_end/images/1699009486529_nefariousdesktop.avif" class="d-block w-100" alt="...">
+              </div>
+             
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+        <div class="content">
+            <div class="heading">
+                <Span class="Movies">Movies</Span>
+            </div>
+            <div class="card-container">
+                <div id="show" class="card-sub-container">
+                          
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- <div class="strip"> -->
+            <!-- <img src="../front_end/images/enter/strip.webp" style="height:105px;" alt=""> -->
+        <!-- </div> -->
+<!-- 
+        <h1 class="title-enter">The Best of Entertainment</h1>
+        <div class="enter-list">
+            <div class="enter-container">
+
+                <div class="card">
+                    <img src="./images/enter/enter1.webp" class="card-img" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="./images/enter/enter2.webp" class="card-img" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="./images/enter/enter3.webp" class="card-img" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="./images/enter/enter4.webp" class="card-img" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="./images/enter/enter5.webp" class="card-img" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="./images/enter/enter6.webp" class="card-img" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="./images/enter/enter7.webp" class="card-img" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="./images/enter/enter8.webp" class="card-img" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="./images/enter/enter9.webp" class="card-img" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="img/enter/enter10.webp" class="card-img" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="img/enter/enter11.webp" class="card-img" alt="">
+                </div>
+
+                <div class="card">
+                    <img src="img/enter/enter12.webp" class="card-img" alt="">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+     End content  -->
+
+    <!-- </div> -->
+<!-- End wrapper -->
+
+            <!-- ------------------------------footer---------------------------- -->
+
+
+<!-- //////////////footer///////////////// -->
+<div class="footer-first-section">
+    <div class="container footer-content">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <span class="list-show-text">List Your Show</span>
+        <span class="gotashow-text">Got a show,event,activity or a great expirience? partner with us & get listed on BookMyShow</span>
+
+        <button>Contact Today!</button>
+    </div>
+</div>
+<div class="footer-option-section">
+    <div class="cstmer">
+        <i class="fa fa-headphones"></i>
+        <p>24/7 CUSTOMER CARE</p>
+    </div>
+    <div class="resend-booking">
+        <i class="fa fa-ticket" aria-hidden="true"></i>
+        <p>RESEND BOOKIG CONFORMATION</p>
+    </div>
+    <div class="sbscrb">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <p>SUBSCRIBE TO THE NEWSLETTER</p>
+    </div>
+</div>
+<div class="ul-logo">
+    <div class="ul"></div>
+    <div class="footer-logo"><img src="./images/bookmyshow-logo-31BC3C7354-seeklogo.com-removebg-preview.png" alt=""></div>
+    <div class="ul"></div>
+</div>
+<div class="social-links">
+    <a href="" title="Link"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+   <a href="" title="Link"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+   <a href="" title="Link"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="" title="Link"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+    <a href="" title="Link"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+   <a href="" title="Link"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+   <p>Copyright 2023 Bigtree Entertainment Pvt.ltd.All Rights Reserved</p>
+    </div>
+
+
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  height: 75px;
+  background-color: #333545;
+  display: flex;
+  gap: 450px;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+  margin-left: 110px;
+  gap: 10px;
+}
+.bklogo {
+  width: 150px;
+}
+.navbar-search {
+  width: 500px;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  font-size: medium;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.kochi {
+  color: white;
+  font-size: 17px;
+  font-family: system-ui, -apple-system, "Segoe UI", "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+.sign-in {
+  width: 75px;
+  height: 30px;
+  background-color: #f84464;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-family: system-ui, -apple-system, "Segoe UI", "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+.burger-bar {
+  width: 40px;
+}
+.main-container {
+  height: 510px;
+  position: absolute;
+ 
+}
+.main{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 1536px;
+    height: 534px;
+    box-shadow: inset 850px 0 3000px 0 #1a1a1a;
+}
+.banner{
+    position: absolute;
+    width:1536px;
+    
+}
+.main-container-left {
+  height: 510px;
+  width: 405px;
+}
+.image-container {
+  position: absolute;
+}
+.main-container-left img {
+  width: 250px;
+  border-radius: 10px;
+  position: relative;
+  top: 50px;
+  left: 150px;
+}
+.main-container-right {
+  width: 1100px;
+}
+.main-container-right-contents {
+  height: 510px;
+  width: 1080px;
+  position: absolute;
+}
+.movie-title {
+  width: 300px;
+  height: 50px;
+  position: relative;
+  top: 60px;
+  left: 20px;
+}
+.movie-title span {
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+
+}
+.rating{
+    width: 230px;
+    height: 50px;
+    position: relative;
+    left: 20px;
+    top: 70px;
+    display: flex;
+    align-items: center;
+}
+.rating img{
+    width: 30px;
+    margin-right: 5px;
+}
+.rating-count span{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.vote span{
+    color: white;
+    display: flex;
+    margin-top: 9px;
+    margin-left: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.add-rating{
+    border-radius: 10px;
+    height: 78px;
+    width: 440px;
+    background-color: #333333;
+    position: relative;
+    left: 20px;
+    top: 80px;
+    display: flex;
+}
+.left{
+    width: 65%;
+    height: 100%;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.top span{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    left: 20px;
+    position: relative;
+    top:10px;   
+}
+.bottom{
+    position: absolute;
+}
+.bottom span{
+    position: relative;
+    top: 40px;
+    left: 20px;
+    color: #cccccc;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+.right{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edit .rate-now-btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    border: none;
+}
+.languages{
+    gap: 8px;
+    display: flex;
+    position: relative;
+    width: 350px;
+    height: 30px;
+    left: 20px;
+    top: 100px;
+}
+.language-left{
+    width: 38%;
+    background-color: #e5e5e5;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.language-right{
+    width: 60%;
+    background-color: #e5e5e5;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.language-left span,.language-right span{
+    font-family: 'Roboto', sans-serif;
+}
+.other-details{
+    height: 40px;
+    width: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 20px;
+    top: 110px;
+}
+.other-details span{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.book-tickets{
+    position: relative;
+    left: 20px;
+    top: 140px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #f84464;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.description{
+    width:1534px;
+    height: 180px;
+    position: absolute;
+}
+.about-the-movie{
+    position: relative;
+    top: 20px;
+    left: 150px;
+    width: 190px;
+    height: 30px;
+}
+.about-the-movie span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid white;
+}
+.movie-description{
+    position: relative;
+    left: 150px;
+    top: 35px;
+    width: 1000px;
+    height: 110px;
+    border: 1px solid white;
+}
+.movie-description p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 16.5px;
+    border: 1px solid white;
+}

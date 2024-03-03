@@ -1,0 +1,289 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #333545
+}
+a{
+    color: white;
+    text-decoration: none;
+  }
+   a:visited{
+    color: white;
+  }
+
+.navbar {
+    height: 75px;
+    background-color: #333545;
+    display: flex;
+    gap: 150px;
+    margin-bottom: 30px;
+  }
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    margin-left: 110px;
+    gap: 10px;
+  }
+  .bklogo {
+    width: 150px;
+  }
+ 
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  .sign-in {
+    width: 75px;
+    height: 28px;
+    background-color: #f84464;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-family: system-ui, -apple-system,"Segoe UI",
+      "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+  }
+  .burger-bar {
+    width: 40px;
+  }
+
+
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .language-box {
+  margin-top: 20px;
+}
+.language-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+  height: 50px;
+}
+.form :where(.language-box, .language) {
+  
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .language {
+  column-gap: 5px;
+}
+.language input {
+  accent-color: #333545;
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.language label {
+  color: #707070;
+}
+.address :where(textarea, .select-box) {
+  margin-top: 15px;
+} 
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background:#333545;
+}
+.formfield {
+  display: flex;
+  align-items: start;
+  margin-bottom: 20px;
+}
+.formfield textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 700px;
+  height: 200px;
+  font-size: 1rem;
+  padding: 10px;
+}
+.form button:hover {
+  background: black;
+}
+
+
+
+
+
+
+Result Skip Results Iframe
+EDIT ON
+input[type="file"] {
+  outline: none;
+  padding: 4px;
+  margin: -4px;
+}
+
+input[type="file"]:focus-within::file-selector-button,
+input[type="file"]:focus::file-selector-button {
+  outline: 2px solid #0964b0;
+  outline-offset: 2px;
+}
+
+input[type="file"]::before {
+  top: 16px;
+}
+
+input[type="file"]::after {
+  top: 14px;
+}
+
+/* ------- From Step 2 ------- */
+
+input[type="file"] {
+  position: relative;
+}
+
+input[type="file"]::file-selector-button {
+  width: 136px;
+  color: transparent;
+}
+
+/* Faked label styles and icon */
+input[type="file"]::before {
+  position: absolute;
+  pointer-events: none;
+  /*   top: 11px; */
+  left: 40px;
+  color: #333545;
+  content: "Upload file";
+}
+
+
+input[type="file"]::after {
+  position: absolute;
+  pointer-events: none;
+  /*   top: 10px; */
+  left: 16px;
+  height: 20px;
+  width: 20px;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
+}
+
+/* ------- From Step 1 ------- */
+
+/* file upload button */
+input[type="file"]::file-selector-button {
+  border-radius: 4px;
+  padding: 0 16px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+  margin-right: 16px;
+  transition: background-color 200ms;
+}
+
+/* file upload button hover state */
+input[type="file"]::file-selector-button:hover {
+  background-color: #f3f4f6;
+}
+
+/* file upload button active state */
+input[type="file"]::file-selector-button:active {
+  background-color: #e5e7eb;
+}
+
+/* ------------------------ */
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+.image-preview{
+    width: 99%;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.poster-preview{
+    border: 1px solid gray;
+    border-radius: 6px;
+    height: 94%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+.banner-preview{
+    border: 1px solid gray;
+    border-radius: 6px;
+    height: 94%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
